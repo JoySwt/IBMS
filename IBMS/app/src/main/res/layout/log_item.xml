@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/my_margin"
+    android:stretchColumns="*">
+    <TableRow android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/my_margin"
+            android:gravity="center"
+            android:textSize="@dimen/activity_horizontal_margin" />
+
+        <TextView
+            android:id="@+id/tvCheckinTime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_margin"
+            android:gravity="center"
+            android:textSize="@dimen/activity_horizontal_margin" />
+    </TableRow>
+</TableLayout>

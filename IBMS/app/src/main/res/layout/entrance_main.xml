@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请先选择楼层"
+        android:textSize="@dimen/text_margin"
+        android:id="@+id/tvFloor"
+        android:gravity="center"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+
+    <TableRow
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="ID"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="位置"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="状态"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+    </TableRow>
+    </TableLayout>
+    <view xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefreshLayout"
+        class="android.support.v4.widget.SwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recyclerview"
+        android:dividerHeight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+    </view>
+</LinearLayout>

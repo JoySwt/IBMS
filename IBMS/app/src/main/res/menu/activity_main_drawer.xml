@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/welcome"
+            android:icon="@drawable/ic_menu_send"
+            android:title="如何使用" />
+        <item
+            android:id="@+id/entrance"
+            android:icon="@drawable/ic_menu_send"
+            android:title="门禁状态与记录" />
+        <item
+            android:id="@+id/safe"
+            android:icon="@drawable/ic_menu_send"
+            android:title="设防" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_menu_send"
+            android:title="关于" />
+    </group>
+
+
+
+</menu>
