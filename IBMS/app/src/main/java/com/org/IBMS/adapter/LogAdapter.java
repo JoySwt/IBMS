@@ -1,4 +1,4 @@
-package com.example.myapplicationdemo01.adapter;
+package com.org.IBMS.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.myapplicationdemo01.R;
-import com.example.myapplicationdemo01.data.CheckinHistory;
+import com.org.IBMS.R;
+import com.org.IBMS.data.CheckinHistory;
 
 import java.util.Date;
 import java.util.List;

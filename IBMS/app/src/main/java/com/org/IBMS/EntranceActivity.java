@@ -1,4 +1,4 @@
-package com.example.myapplicationdemo01;
+package com.org.IBMS;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,14 +12,14 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.myapplicationdemo01.adapter.EntranceAdapter;
-import com.example.myapplicationdemo01.data.EntranceStatusData;
-import com.example.myapplicationdemo01.util.DividerItemDecoration;
+import com.org.IBMS.adapter.EntranceAdapter;
+import com.org.IBMS.data.EntranceStatusData;
+import com.org.IBMS.util.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.myapplicationdemo01.data.EntranceStatusData.getEntranceDatas;
+import static com.org.IBMS.data.EntranceStatusData.getEntranceDatas;
 
 public class EntranceActivity extends AppCompatActivity {
     private MenuItem item1, item2, item3;
@@ -57,6 +57,13 @@ public class EntranceActivity extends AppCompatActivity {
                 intent.setClass(EntranceActivity.this, LogActivity.class);
                 intent.putExtra("id",datas.get(position).getId());
                 startActivity(intent);
+            }
+        });
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                Toast.makeText(EntranceActivity.this, "请先选择楼层，然后再刷新！", Toast.LENGTH_SHORT).show();
+                swipeRefreshLayout.setRefreshing(false);
             }
         });
     }

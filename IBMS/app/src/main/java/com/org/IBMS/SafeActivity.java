@@ -1,4 +1,4 @@
-package com.example.myapplicationdemo01;
+package com.org.IBMS;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

@@ -1,4 +1,4 @@
-package com.example.myapplicationdemo01.util;
+package com.org.IBMS.util;
 
 /*
  * Copyright (C) 2014 The Android Open Source Project

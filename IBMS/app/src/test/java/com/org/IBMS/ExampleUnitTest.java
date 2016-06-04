@@ -1,4 +1,4 @@
-package com.example.myapplicationdemo01;
+package com.org.IBMS;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.myapplicationdemo01;
+package com.org.IBMS;
 
 import android.content.Intent;
 import android.os.Bundle;
